@@ -46,7 +46,7 @@ class _DolarScreenState extends State<DolarScreen> {
     if (selectedcoin != null && enteredAmount > 0) {
       double exchangeRate = moneyFelow[selectedcoin] ?? 0.0;
       setState(() {
-        convertedAmount = enteredAmount / exchangeRate; // قسمة المبلغ على سعر الصرف لتحويله إلى الدولار
+        convertedAmount = enteredAmount / exchangeRate;    
       });
     }
   }
